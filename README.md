@@ -2,6 +2,6 @@
 
 (work in progress)
 
-- [Getting Started](GettingStarted.md)
-- [Unity](Unity.md)
-- [Matlab/Simulink](MatlabSimulink.md)
+- [Getting Started](GettingStarted.html)
+- [Unity](Unity.html)
+- [Matlab/Simulink](MatlabSimulink.html)
