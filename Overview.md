@@ -38,7 +38,23 @@ unity -->|Rolling Resistance| haptics
 ```
 
 
-The project uses a git-based versioning system, with heavy use of git submodules. Any simulator is derived from the `sim_generic` repository, which is a toplevel repository that includes every available submodule. The folder/submodule hierarchy in this repository is:
+The project uses a git-based versioning system, with heavy use of git submodules. Any simulator is forked from the `sim_base` repository, which is a toplevel repository that includes all available submodule:
+
+```mermaid
+flowchart LR
+
+sim_base["<b>sim_base</b><br/>A template to fork"]
+sim_generic["<b>sim_generic</b><br/>A generic repository not tied to a specific hardware"]
+sim_irglm["<b>sim_irglm</b><br/>The IRGLM high-realism simulator"]
+
+sim_base -->|fork| sim_generic
+sim_base -->|fork| sim_irglm
+
+```
+
+The unneeded modules are then removed from the forked repositories.
+
+The folder/submodule hierarchy in the `sim_base` repository is:
 
 ```mermaid
 flowchart LR
