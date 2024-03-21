@@ -30,7 +30,6 @@ unpublished         : false
 # Plugins
 whitelist           : []
 plugins             : ["jekyll-relative-links"]
-theme               : jekyll-theme-slate
 
 # Conversion
 markdown            : kramdown
