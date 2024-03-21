@@ -23,6 +23,3 @@ The WheelSims structuring project is an initiative funded by the Fonds de recher
 
 This project contributes to the development of several wheelchair simulators in Montreal (pictures below), and to the current development of a new high-realism wheelchair simulator at the [Institut universitaire sur la réadaptation en déficience physique de Montréal (IURDPM).](https://ciusss-centresudmtl.gouv.qc.ca/mission-universitaire/designations-universitaires/institut-universitaire-sur-la-readaptation-en-deficience-physique-de-montreal/)
 
-- [Getting Started](GettingStarted.md)
-- [Unity](Unity.md)
-- [Matlab/Simulink](MatlabSimulink.md)
