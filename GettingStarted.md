@@ -1,3 +1,7 @@
+---
+id: GettingStarted
+title: Getting Started
+---
 [Home](.)
 
 # Getting Started
