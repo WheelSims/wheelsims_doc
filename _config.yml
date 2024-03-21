@@ -3,6 +3,7 @@ whitelist: ["jekyll-relative-links"]
 plugins: ["jekyll-relative-links"]
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 sidebar:
+  - Overview
   - GettingStarted
   - Unity
   - MatlabSimulink
