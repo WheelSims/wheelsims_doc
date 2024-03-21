@@ -1,3 +1,6 @@
+---
+id: MatlabSimulink
+---
 [Home](.)
 
 # Matlab/Simulink
