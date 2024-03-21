@@ -11,6 +11,13 @@ The WheelSims project is a set of blocks distributed on different repositories, 
 Since `git` is already complex for newcomers, having multiple repositories is yet more complex. For this reason, we recommend to use a good GUI to stay up to date and ease collaborative development. In these README files, we make use of [SourceTree](https://www.sourcetreeapp.com/), a free `git` client for Mac and Windows.
 
 
+## Configuring SourceTree to recurse in submodules
+
+In SourceTree's preferences, Git pane, tick the box "Perform submodule actions recursively".
+
+![Screen Shot 2024-03-21 at 16 14 23](https://github.com/WheelSims/wheelsims_doc/assets/34967663/47ad5c9c-622d-44c5-8715-bf5c17a2cba4)
+
+
 ## Toplevel repositories
 
 Only the repositories that start by `sim` are toplevel repositories and are meant to be cloned. The others are submodules. Currently, we have:
