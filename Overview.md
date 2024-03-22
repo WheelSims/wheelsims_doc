@@ -68,7 +68,7 @@ vr_static_objects["vr_static_objects<br/>(git submodule)"]
 vr_dynamic_objects["vr_dynamic_objects<br/>(git submodule)"]
 vr_street_lights["vr_street_lights<br/>(git submodule)"]
 vr_user["vr_user<br/>(git submodule)"]
-vr_art_src["vr_art_src<br/>(git submodule)"]
+vr_art_source["vr_art_source<br/>(git submodule)"]
 
 haptics("Haptics<br/>(folder)")
 
@@ -77,7 +77,7 @@ haptics_common["haptics_common<br/>(git submodule)"]
 
 sim_generic --> unity
 unity --> assets
-unity --> vr_art_src
+unity --> vr_art_source
 unity --> unity2
 unity --> unity3
 unity --> unity4
@@ -104,7 +104,7 @@ with:
 - `vr_dynamic_objects` submodule: An asset submodule that includes dynamic objects such as pedestrians and cars.
 - `vr_street_lights` submodule: An asset submodule that includes automated, configurable street lights, streets and sidewalks.
 - `vr_user` submodule: An asset submodule that includes a set of colliders, cameras and scripts that represents the user in its environment. This also includes code to communicate with the haptics system (if present) and the incline system (if present).
-- `vr_art_src` submodule: A repository of construction material for the assets and scenes, such as Blender files.
+- `vr_art_source` submodule: A repository of construction material for the assets and scenes, such as Blender files. This repository does not contain the textures: textures are hosted as assets on their corresponding repositories.
 - `Haptics` folder: A folder that contains the Simulink Real-Time material for the haptics system. Apart from the git submodule, the contents of this folder is specific to this simulator.
 - `haptics_common` submodule: A submodule of Simulink blocks that are shared between simulators, such as the dynamical model of a wheelchair, motor controllers, etc.
 
