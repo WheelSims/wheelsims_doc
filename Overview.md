@@ -1,7 +1,5 @@
----
-id: Overview
-title: Overview
----
+[Home](.)
+
 # Overview
 
 The WheelSims system combines:
