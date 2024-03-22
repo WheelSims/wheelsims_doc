@@ -1,4 +1,4 @@
 # Plugins
 whitelist: ["jekyll-relative-links"]
 plugins: ["jekyll-relative-links"]
-theme: zendesk/jekyll-theme-slate
+theme: jekyll-theme-slate
