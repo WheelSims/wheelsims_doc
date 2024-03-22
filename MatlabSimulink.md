@@ -1,5 +1,3 @@
-[Home](.)
-
 # Matlab/Simulink
 
 Todo.

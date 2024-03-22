@@ -1,5 +1,3 @@
-[Home](.)
-
 # Unity
 
 Virtual environments are built using Unity and are versioned using several repositories and git submodules. Please consult the "Getting started" section to install a toplevel repository.

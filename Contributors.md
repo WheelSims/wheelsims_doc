@@ -1,5 +1,3 @@
-[Home](.)
-
 # Contributors
 ## Project leader
 

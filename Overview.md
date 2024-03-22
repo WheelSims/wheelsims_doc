@@ -1,5 +1,3 @@
-[Home](.)
-
 # Overview
 
 The WheelSims system combines:
