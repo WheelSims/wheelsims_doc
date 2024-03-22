@@ -1,10 +1,14 @@
 # Overview
 
+The WheelSims project is a set of blocks distributed on different repositories, that can be shared among wheelchair simulators to accelerate the development of virtual reality in wheelchair training.
+
+## Hardware overview
+
 The WheelSims system combines:
 
-- haptics - so that the user feels realistic forces at the wheels
-- virtual reality - so that the user feels where they navigate
-- an incline platform - so that the user feels the difference between ascending, descending or crossing a slope.
+- **Haptics** - so that the user feels realistic forces at the wheels
+- **Virtual Reality** - so that the user feels where they navigate
+- **Incline Platform** - so that the user feels the difference between ascending, descending or crossing a slope.
 
 These three systems are independent. For example, it is not required to have an haptic system to navigate in virtual reality. They are complementary, they add realism to the simulation.
 
@@ -34,23 +38,17 @@ unity -->|Rolling Resistance| haptics
 ```
 
 
-The project uses a git-based versioning system, with heavy use of git submodules. Any simulator is forked from the `sim_base` repository, which is a toplevel repository that includes all available submodule:
+## Software overview
 
-```mermaid
-flowchart LR
+The project uses a git-based versioning system, with heavy use of git submodules. All toplevel repositories start with `sim_`:
 
-sim_base["<b>sim_base</b><br/>A template to fork"]
-sim_generic["<b>sim_generic</b><br/>A generic repository not tied to a specific hardware"]
-sim_irglm["<b>sim_irglm</b><br/>The IRGLM high-realism simulator"]
+- `sim_generic`: A generic repository not tied to specific hardware. This "simulator" includes every available submodule and is mainly for testing and developing the submodules.
+- `sim_irglm`: The IRGLM high-realism simulator.
+- `sim_racing`: A wheelchair racing simulator with user-power biofeedback.
 
-sim_base -->|fork| sim_generic
-sim_base -->|fork| sim_irglm
+New simulators normally use `sim_generic` as a template.
 
-```
-
-The unneeded modules are then removed from the forked repositories.
-
-The folder/submodule hierarchy in the `sim_base` repository is:
+The folder/submodule hierarchy in the `sim_generic` repository is presented below. Note that any other simulator should follow a similar hierarchy.
 
 ```mermaid
 flowchart LR
@@ -107,4 +105,3 @@ with:
 - `vr_art_source` submodule: A repository of construction material for the assets and scenes, such as Blender files. This repository does not contain the textures: textures are hosted as assets on their corresponding repositories.
 - `Haptics` folder: A folder that contains the Simulink Real-Time material for the haptics system. Apart from the git submodule, the contents of this folder is specific to this simulator.
 - `haptics_common` submodule: A submodule of Simulink blocks that are shared between simulators, such as the dynamical model of a wheelchair, motor controllers, etc.
-

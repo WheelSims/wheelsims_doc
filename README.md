@@ -6,6 +6,6 @@ The WheelSims structuring project is an initiative funded by the Fonds de recher
 
 - [Contributors](Contributors.md)
 - [Overview](Overview.md)
-- [Getting Started](GettingStarted.md)
+- [Getting Started](CloningRepository.md)
 - [Unity](Unity.md)
 - [Matlab Simulink](MatlabSimulink.md)
