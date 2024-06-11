@@ -61,12 +61,12 @@ unity2("Library<br/>(folder)")
 unity3("Packages<br/>(folder)")
 unity4("etc.")
 
-vr_scenes["vr_scenes<br/>(git submodule)"]
-vr_static_objects["vr_static_objects<br/>(git submodule)"]
-vr_dynamic_objects["vr_dynamic_objects<br/>(git submodule)"]
-vr_street_lights["vr_street_lights<br/>(git submodule)"]
-vr_user["vr_user<br/>(git submodule)"]
+vr_assets_common["vr_assets_common<br/>(git submodule)"]
 vr_art_source["vr_art_source<br/>(git submodule)"]
+
+scenes("Scenes<br/>(folder)")
+user("User<br/>(folder)")
+assets_etc("etc.")
 
 haptics("Haptics<br/>(folder)")
 
@@ -80,12 +80,10 @@ unity --> unity2
 unity --> unity3
 unity --> unity4
 
-assets --> vr_scenes
-assets --> vr_static_objects
-assets --> vr_dynamic_objects
-assets --> vr_street_lights
-assets --> vr_user
-
+assets --> vr_assets_common
+assets --> scenes
+assets --> user
+assets --> assets_etc
 
 sim_generic --> haptics
 
@@ -95,13 +93,9 @@ haptics --> haptics_common
 ```
 with:
 
-- `Unity` folder: The Unity project to open in Unity Hub. Apart from the git submodules, the contents of this folder is specific to this simulator.
-- `Assets` folder: A folder that contains the asset submodules, shared between every simulators.
-- `vr_scenes` submodule: An asset submodule that includes all available scenes.
-- `vr_static_objects` submodule: An asset submodule that includes static objects such as bins, trees, building facades, etc.
-- `vr_dynamic_objects` submodule: An asset submodule that includes dynamic objects such as pedestrians and cars.
-- `vr_street_lights` submodule: An asset submodule that includes automated, configurable street lights, streets and sidewalks.
-- `vr_user` submodule: An asset submodule that includes a set of colliders, cameras and scripts that represents the user in its environment. This also includes code to communicate with the haptics system (if present) and the incline system (if present).
+- `vr_assets_common` submodule: An asset submodule that includes all shared objects and scripts, from the smallest object to whole environments, available as drag-drop prefabs.
+- `Scenes` folder: The folder that includes the specific scenes for a given simulator. A scene normally consists in at least an environment from the `vr_assets_common submodule`, and a user from the `User` folder.
+- `User` folder: A folder that includes a set of colliders, cameras and scripts that represents the user in its environment. This also includes scripts to communicate with the haptics system (if present), the incline system (if present), and other instruments.
 - `vr_art_source` submodule: A repository of construction material for the assets and scenes, such as Blender files. This repository does not contain the textures: textures are hosted as assets on their corresponding repositories.
 - `Haptics` folder: A folder that contains the Simulink Real-Time material for the haptics system. Apart from the git submodule, the contents of this folder is specific to this simulator.
 - `haptics_common` submodule: A submodule of Simulink blocks that are shared between simulators, such as the dynamical model of a wheelchair, motor controllers, etc.
