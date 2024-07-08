@@ -29,6 +29,8 @@
 
 ## Research interns
 
+**Islande Teillet** developed a python module to allow analyzing the propulsion kinematics in real-time using Python.
+
 **Abir Brahmi** developed modular virtual reality environments using Unity for wheelchair propulsion training on a simulator.
 
 **Léa Kohl** developed a control path for the D-Box incline platform.
