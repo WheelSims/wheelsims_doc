@@ -1,7 +1,6 @@
 # WheelSims documentation
 
 - [Contributors](Contributors.md)
-- [Overview](Overview.md)
+- [Hardware Overview](HardwareOverview.md)
+- [Software Overview](SoftwareOverview.md)
 - [Getting Started](CloningRepository.md)
-- [Unity](Unity.md)
-- [Matlab Simulink](MatlabSimulink.md)
