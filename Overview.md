@@ -42,60 +42,22 @@ unity -->|Rolling Resistance| haptics
 
 The project uses a git-based versioning system, with heavy use of git submodules. All toplevel repositories start with `sim_`:
 
-- `sim_generic`: A generic repository not tied to specific hardware. This "simulator" includes every available submodule and is mainly for testing and developing the submodules.
-- `sim_irglm`: The IRGLM high-realism simulator.
-- `sim_racing`: A wheelchair racing simulator with user-power biofeedback.
+- [`sim_generic`](https://github.com/WheelSims/sim_generic): A generic repository not tied to specific hardware. This "simulator" includes every available submodule and is mainly for testing and developing the submodules.
+- [`sim_irglm`](https://github.com/WheelSims/sim_irglm): The IRGLM high-realism simulator.
+- [`sim_racing`](https://github.com/WheelSims/sim_racing): A wheelchair racing simulator with user-power biofeedback.
 
-New simulators normally use `sim_generic` as a template.
+New simulators normally use [`sim_generic`](https://github.com/WheelSims/sim_generic) as a template, which folder/submodule hierarchy is presented below.
 
-The folder/submodule hierarchy in the `sim_generic` repository is presented below. Note that any other simulator should follow a similar hierarchy.
-
-```mermaid
-flowchart LR
-
-sim_generic["sim_generic<br/>(main repository)"]
-
-unity("Unity<br/>(folder)")
-assets("Assets<br/>(folder)")
-unity2("Library<br/>(folder)")
-unity3("Packages<br/>(folder)")
-unity4("etc.")
-
-vr_assets_common["vr_assets_common<br/>(git submodule)"]
-vr_art_source["vr_art_source<br/>(git submodule)"]
-
-scenes("Scenes<br/>(folder)")
-user("User<br/>(folder)")
-assets_etc("etc.")
-
-haptics("Haptics<br/>(folder)")
-
-haptics_common["haptics_common<br/>(git submodule)"]
-
-
-sim_generic --> unity
-unity --> assets
-unity --> vr_art_source
-unity --> unity2
-unity --> unity3
-unity --> unity4
-
-assets --> vr_assets_common
-assets --> scenes
-assets --> user
-assets --> assets_etc
-
-sim_generic --> haptics
-
-haptics --> haptics_common
-
-
-```
-with:
-
-- `vr_assets_common` submodule: An asset submodule that includes all shared objects and scripts, from the smallest object to whole environments, available as drag-drop prefabs.
-- `Scenes` folder: The folder that includes the specific scenes for a given simulator. A scene normally consists in at least an environment from the `vr_assets_common submodule`, and a user from the `User` folder.
-- `User` folder: A folder that includes a set of colliders, cameras and scripts that represents the user in its environment. This also includes scripts to communicate with the haptics system (if present), the incline system (if present), and other instruments.
-- `vr_art_source` submodule: A repository of construction material for the assets and scenes, such as Blender files. This repository does not contain the textures: textures are hosted as assets on their corresponding repositories.
-- `Haptics` folder: A folder that contains the Simulink Real-Time material for the haptics system. Apart from the git submodule, the contents of this folder is specific to this simulator.
-- `haptics_common` submodule: A submodule of Simulink blocks that are shared between simulators, such as the dynamical model of a wheelchair, motor controllers, etc.
+- `Unity`
+  - `Assets`
+    - [`vr_assets_common`](https://github.com/WheelSims/vr_assets_common): A git submodule that includes all shared objects and scripts, from the smallest object to whole environments, available as drag-drop prefabs.
+    - `Scenes`: A folder that includes the specific scenes for a given simulator. A scene normally consists in at least an environment from the [vr_assets_common](https://github.com/WheelSims/vr_assets_common), and a user from the User folder.
+    - `User`: A folder that includes a set of colliders, cameras and scripts that represents the user in its environment. This also includes scripts to communicate with the haptics system (if present), the incline system (if present), and other instruments.
+  - [`vr_art_source`](https://github.com/WheelSims/vr_art_source): A git submodule of construction material for the assets and scenes, such as Blender files. This repository does not contain the textures: textures are in the [vr_assets_common](https://github.com/WheelSims/vr_assets_common) so that they are read by Unity.
+  - `Library`
+  - `Packages`
+  - ...
+ 
+- `Haptics`
+  - [`haptics_common`](https://github.com/WheelSims/haptics_common): A git submodule of Simulink blocks that are shared between simulators, such as the dynamical model of a wheelchair, motor controllers, etc.
+  - ...
