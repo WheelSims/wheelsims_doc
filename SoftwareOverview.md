@@ -8,16 +8,26 @@ The project uses a git-based versioning system, with heavy use of git submodules
 
 New simulators normally use [`sim_generic`](https://github.com/WheelSims/sim_generic) as a template, which folder/submodule hierarchy is presented below.
 
-- `Unity`
-  - `Assets`
-    - [`vr_assets_common`](https://github.com/WheelSims/vr_assets_common): A git submodule that includes all shared objects and scripts, from the smallest object to whole environments, available as drag-drop prefabs.
-    - `Scenes`: A folder that includes the specific scenes for a given simulator. A scene normally consists in at least an environment from the [vr_assets_common](https://github.com/WheelSims/vr_assets_common), and a user from the User folder.
-    - `User`: A folder that includes a set of colliders, cameras and scripts that represents the user in its environment. This also includes scripts to communicate with the haptics system (if present), the incline system (if present), and other instruments.
-  - [`vr_art_source`](https://github.com/WheelSims/vr_art_source): A git submodule of construction material for the assets and scenes, such as Blender files. This repository does not contain the textures: textures are in the [vr_assets_common](https://github.com/WheelSims/vr_assets_common) so that they are read by Unity.
-  - `Library`
-  - `Packages`
-  - ...
- 
-- `Haptics`
-  - [`haptics_common`](https://github.com/WheelSims/haptics_common): A git submodule of Simulink blocks that are shared between simulators, such as the dynamical model of a wheelchair, motor controllers, etc.
-  - ...
+```
+sim_generic
++-- Unity
+|   +-- Assets
+|   |   +-- vr_assets_common   # A git submodule that includes all shared objects and scripts, from the smallest object to whole environments, available as drag-drop prefabs.
+|   |       +-- Environments   # A folder that include prefabs of complete navigable environments, including pedestrians and cars, to be imported into a scene.
+|   |       +-- Objects        # A folder that include the available objects and prefabs to create environments.
+|   |   +-- Scenes             # A folder that includes the specific scenes for a given simulator. A scene normally consists in at least an environment from vr_assets_common, and a user from the User folder.
+|   |   +-- User               # A folder that includes a set of colliders, cameras and scripts that represents the user. It also includes the scripts to communicate with the haptics system (if present), the incline system (if present), and other instruments.
+|   +-- vr_art_source          # A git submodule of construction material for the assets and scenes, such as Blender files. Texture images are stored in vr_assets_common, not here.
+|   +-- ...
++-- Haptics
+|   +-- haptics_common         # A git submodule of Simulink blocks that are shared between simulators, such as the dynamical model of a wheelchair, motor controllers, etc.
+|   +-- ...
++-- ...
+```
+
+## Links to the git submodules:
+
+- [`vr_assets_common`](https://github.com/WheelSims/vr_assets_common)
+- [`vr_art_source`](https://github.com/WheelSims/vr_art_source)
+- [`haptics_common`](https://github.com/WheelSims/haptics_common)
+
