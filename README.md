@@ -8,3 +8,7 @@
 ## Unity
 
 - [Conventions](UnityConventions.md)
+- [Moving objects (pedestrians, cars)](UnityMovingObjects.md)
+- [Creating new characters using Mixamo](UnityMixamo.md)
+
+
