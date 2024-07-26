@@ -85,14 +85,15 @@ We apply the rig from the model avatar (select "Copy From Other Avatar" and sele
 
 ### Importing the animation
 
-Check [X] Loop Time, and Apply.
+Check [X] Loop Time, select Root Transform Position (Y) Based Upon "Feet", and Apply.
 
 ![](images/unity_import_idle_animation.png)
 
+![](images/unity_import_idle_animation_root.png)
 
 ## Creating an animation controller
 
-In `vr_assets_common/Objects/MovingObjects/Animators`, copy-paste the `HumanAnimatorTemplate` controller to a new one, for example `MeganAnim`. Then click on your new controller to edit it.
+In `vr_assets_common/Objects/MovingObjects/Animators`, copy-paste the `HumanAnimTemplate` controller to a new one, for example `MeganAnim`. Then click on your new controller to edit it.
 
 ![](images/unity_animator_flow.png)
 
