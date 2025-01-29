@@ -6,20 +6,18 @@ Developing WheelSims makes heavy use of Git and Git submodules. Since Git is usu
 
 In SourceTree's preferences, Git pane, tick the box "Perform submodule actions recursively".
 
-![Screen Shot 2024-03-21 at 16 14 23](https://github.com/WheelSims/wheelsims_doc/assets/34967663/47ad5c9c-622d-44c5-8715-bf5c17a2cba4)
+![Screenshot 2025-01-29 at 10 37 13](https://github.com/user-attachments/assets/beb813c9-1348-457a-a655-d1a230552728)
 
 
 ## Cloning a toplevel repository
 
-!FIXME These screenshots are not up to date. But we still get the main idea.
-
 To clone a repository locally with all its submodule, choose `New` → `Clone from URL` and fill these informations (change to the repository name you want to clone):
 
-![image](https://github.com/WheelSims/sim_generic_vr/assets/34967663/d9d2e243-29f7-4dea-994a-e5b46fa4fef7)
+![Screenshot 2025-01-29 at 10 39 55](https://github.com/user-attachments/assets/55a48b99-8bd7-441e-90d1-f49860a3ad8a)
 
 Once cloned, the project looks like this in SourceTree. Note the submodules pane: double-clicking on a submodule launches a new repository window for this specific repository.
 
-![Screen Shot 2024-02-16 at 09 50 35](https://github.com/WheelSims/.github/assets/34967663/d60469de-92e6-4135-8061-1caa2177867d)
+![Screenshot 2025-01-29 at 10 41 15](https://github.com/user-attachments/assets/c3793f8d-5ce4-48e8-be86-d0ee3112959d)
 
 ## Staying updated
 
