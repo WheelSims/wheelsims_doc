@@ -16,7 +16,7 @@ flowchart TD
 
 force_sensor["<b>Force Sensor</b><br/>(AMTI force cell)"]
 haptics["<b>Haptics System</b><br/>(Simulink Real-Time)"]
-unity["<b>Virtual Reality System</b><br/>(Unity3D)"]
+unity["<b>Virtual Reality System</b><br/>(Godot)"]
 motors["<b>Motors</b><br/>(attached to rollers)"]
 rollers["<b>Rollers</b>"]
 projectors["<b>Projectors</b>"]
