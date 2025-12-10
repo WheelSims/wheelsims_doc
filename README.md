@@ -5,10 +5,12 @@
 - [Software Overview](SoftwareOverview.md)
 - [Getting Started](CloningRepository.md)
 
-## Unity
+
+
+-----
+
+(Obsolete Unity sections)
 
 - [Conventions](UnityConventions.md)
 - [Moving objects (pedestrians, cars)](UnityMovingObjects.md)
 - [Creating new characters using Mixamo](UnityMixamo.md)
-
-
