@@ -21,7 +21,11 @@
 
 ## Master Students
 
-**Gabriel Després** designs and tests biofeedback modalities in para-athletes using virtual reality, in order to improve their performance.
+**Simon Manès** designs games and interfaces.
+
+**Thibaud Pradelle** designed a graphical user interface to initialize the simulator and launch scenes.
+
+**Gabriel Després** designed and tested biofeedback modalities in para-athletes using virtual reality, in order to improve their performance.
 
 **Clément Ghazouani** developed real-time load calculations during wheelchair propulsion on a simulator, to reduce the biomechanical and physiological load of propulsion using biofeedback.
 
