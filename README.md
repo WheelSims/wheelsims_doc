@@ -22,7 +22,7 @@ This guide is a work in progress and some sections may be out of date.
     - 🔴 The terrain/objects/environment/playable-scene model
     - 🟢 [Developing new terrains](developing_new_terrains.md)
     - 🟢 [Developing new static objects](developing_new_static_objects.md)
-    - 🔴 Developing new environments
+    - 🟢 [Developing new environments](developing_new_environments.md)
     - 🔴 Developing new playable scenes
 
 - 🔴 Adding active objects to an environment
