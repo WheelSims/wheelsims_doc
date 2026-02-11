@@ -5,7 +5,7 @@ A terrain is a scene that contains (only) the ground and walls. The following gu
 ## Designing the terrain in Blender
 
 Before creating a new terrain, we create these folders:
-- `wheelsims/art_source/irglm` that will contain the source Blender files;
+- `wheelsims/art_source/irglm` that will contain the source Blender files for terrains related to the IRGLM;
 - `wheelsims/src/terrain/irglm` that will contain the final terrain scenes used in Godot;
 - `wheelsims/src/terrain/irglm/fbx` that will contain the exported Blender files;
 - `wheelsims/src/terrain/irglm/textures` that will contain the jpg/png files used as textures.
@@ -30,14 +30,14 @@ We can have more meshes that those two; however, having too meshes in the Blende
 
 ### Exporting to FBX
 
-Once the terrain is completed in Blender, we use File → Export → FBX, we select these options, and we saved as `wheelsims/src/terrain/irglm/irglm_4th_floor_terrain.fbx`. From this point, the terrain can be imported into Godot.
+Once the terrain is completed in Blender, we use File → Export → FBX, we select these options, and we save as `wheelsims/src/terrain/irglm/irglm_4th_floor_terrain.fbx`. From this point, the terrain can be imported into Godot.
 
 ![](images/developing_new_terrains_export_to_fbx.png)
 
 
 ## Creating the terrain scene in Godot
 
-Although we could use the FBX file we just created directly in any scene, we will add an additional layer between the terrain scene (.tscn) used everywhere, and its source geometry (.fbx).
+Although we could use the FBX file we just created directly in any scene, we will add an additional layer between the terrain scene (.tscn) used everywhere, and its source geometry (.fbx). This will allow us to add required collision shape to the terrain later.
 
 In Godot, we close all scenes and we create a new 3D Scene:
 
@@ -56,7 +56,7 @@ From now on, we can drag the new `irglm_4th_floor_terrain.tscn` into a scene to 
 ![](images/developing_new_terrains_tscn_done.png)
 
 
-## Setting the colliders
+## Setting the collision shape
 
 Although we imported the ground and walls correctly, there is still no colliders associated to it, and therefore we would pass through the ground and walls.
 
@@ -86,4 +86,4 @@ We can now control the rolling resistance (and soon the vibration parameters) of
 
 ![](images/developing_new_terrains_rolling_resistance.png)
 
-We just save this scene; it is now ready to be included in any environment.
+The terrain is now ready to be included in any environment.

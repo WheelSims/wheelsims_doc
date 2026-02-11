@@ -21,7 +21,7 @@ This guide is a work in progress and some sections may be out of date.
 - 🔴 Developing new static scenes
     - 🔴 The terrain/objects/environment/playable-scene model
     - 🟢 [Developing new terrains](developing_new_terrains.md)
-    - 🔴 Developing new static objects
+    - 🟢 [Developing new static objects](developing_new_static_objects.md)
     - 🔴 Developing new environments
     - 🔴 Developing new playable scenes
 
