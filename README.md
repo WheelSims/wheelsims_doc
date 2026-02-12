@@ -23,7 +23,7 @@ This guide is a work in progress and some sections may be out of date.
     - 🟢 [Developing new terrains](developing_new_terrains.md)
     - 🟢 [Developing new static objects](developing_new_static_objects.md)
     - 🟢 [Developing new environments](developing_new_environments.md)
-    - 🔴 Developing new playable scenes
+    - 🟢 [Developing new playable scenes](developing_new_playable_scenes.md)
 
 - 🔴 Adding active objects to an environment
     - 🔴 Pedestrians
