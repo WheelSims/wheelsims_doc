@@ -15,7 +15,7 @@ This guide is a work in progress and some sections may be out of date.
     - 🔴 Starting the user interface
 - 🔴 Developing WheelSims
     - 🔴 Cloning vs forking the `wheelsims` repository
-    - 🔴 [File and code conventions](conventions.md)
+    - 🟢 [File and code conventions](conventions.md)
     - 🔴 File structure
 
 - 🔴 Developing new static scenes
