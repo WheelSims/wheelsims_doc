@@ -1,0 +1,114 @@
+{
+  "collapse-filter": true,
+  "search": "-file:\"🗓 \" -path:\"Personal\"",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "file:\"@\"",
+      "color": {
+        "a": 1,
+        "rgb": 2350582
+      }
+    },
+    {
+      "query": "file:\"Home\"",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
+    },
+    {
+      "query": "file:\"🌿\"",
+      "color": {
+        "a": 1,
+        "rgb": 2988558
+      }
+    },
+    {
+      "query": "file:\"MN\"",
+      "color": {
+        "a": 1,
+        "rgb": 16749811
+      }
+    },
+    {
+      "query": "file:\"🎞\"",
+      "color": {
+        "a": 1,
+        "rgb": 16752900
+      }
+    },
+    {
+      "query": "file:\"🖼\"",
+      "color": {
+        "a": 1,
+        "rgb": 16752900
+      }
+    },
+    {
+      "query": "file:\"👤\"",
+      "color": {
+        "a": 1,
+        "rgb": 15461355
+      }
+    },
+    {
+      "query": "file:\"🌱\"",
+      "color": {
+        "a": 1,
+        "rgb": 6668127
+      }
+    },
+    {
+      "query": "file:\"📐\"",
+      "color": {
+        "a": 1,
+        "rgb": 81094
+      }
+    },
+    {
+      "query": "file:\"🖋\"",
+      "color": {
+        "a": 1,
+        "rgb": 16752391
+      }
+    },
+    {
+      "query": "file:\"📊\"",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "file:\"🗓\"",
+      "color": {
+        "a": 1,
+        "rgb": 9371648
+      }
+    },
+    {
+      "query": "file:\"📽\"",
+      "color": {
+        "a": 1,
+        "rgb": 16293641
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": -1.5,
+  "nodeSizeMultiplier": 1.29808349609375,
+  "lineSizeMultiplier": 1.246044921875,
+  "collapse-forces": true,
+  "centerStrength": 0.491861979166667,
+  "repelStrength": 11.50390625,
+  "linkStrength": 1,
+  "linkDistance": 114,
+  "scale": 0.08898925781250001,
+  "close": true
+}

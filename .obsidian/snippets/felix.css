@@ -1,0 +1,96 @@
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: menlo, consolas, helvetica;
+  font-size: smaller !important;
+}
+
+/*
+.markdown-source-view {
+  font-family: menlo, consolas, helvetica;
+}
+
+.nav-file-title, .nav-folder-title {
+  font-size: 12px;
+  line-height: 15px;
+  color: #555;
+}
+*/
+
+div.tree-item {
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/*
+Title below tab
+div.view-header-title {
+	font-size: large;
+	border-bottom: 1px solid #dddddd;
+}*/
+
+div.inline-title {
+	font-size: large;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+/* Font scaling in canvas group titles and labels */
+/*.canvas-group-label {
+	font-size: calc(1.5em / var(--zoom-multiplier)) !important;
+	max-width: 100% !important;
+    padding: calc(var(--size-4-1) / var(--zoom-multiplier)) !important;
+}*/
+
+img[alt*="-height:short"] {max-height:225px;}
+img[alt*="-height:shorter"] {max-height:150px;}
+img[alt*="-height:shortest"] {max-height:100px;}
+img[alt*="-height:normal"] {max-height:340px;}
+img[alt*="-height:tall"] {max-height:510px;}
+img[alt*="-height:taller"] {max-height:765px;}
+img[alt*="-height:tallest"] {max-height:1150px;}
+
+img[alt*="-width:narrow"] {width:30%;}
+img[alt*="-width:narrower"] {width:20%;}
+img[alt*="-width:narrowest"] {width:13%;}
+img[alt*="-width:normal"] {width:45%;}
+img[alt*="-width:wide"] {width:60%;}
+img[alt*="-width:wider"] {width:80%;}
+img[alt*="-width:widest"] {width:100%;}
+img[alt*="-width:full"] {width:100%;}
+img[alt*="-width:half"] {width:48%;}
+
+img[alt*="-border"] {border: solid !important; border-color:#cccccc !important; border-width:1px !important; padding: 10px;}
+
+/* Color
+span.cm-header-1 {color: #70b619;}
+span.cm-header-2 {color: #b0d587;}
+span.cm-header-1 {color: #629632;}
+*/
+span.cm-header {font-family: candara;}
+
+/* Put the headers even in live preview mode */
+.cm-line > span.cm-header-1:not(.cm-formatting):before { content: "# "; color:#aaaaaa;}
+.cm-line.cm-active > span.cm-header-1 > span:not(.cm-selection):before { content: "# ";  color:#aaaaaa;}
+.cm-line > span.cm-header-1 ~ span.cm-header-1:not(.cm-formatting):before { content: ""; }
+
+.cm-line > span.cm-header-2:not(.cm-formatting):before { content: "## ";  color:#aaaaaa;}
+.cm-line.cm-active > span.cm-header-2 > span:not(.cm-selection):before { content: "## ";  color:#aaaaaa;}
+.cm-line > span.cm-header-2 ~ span.cm-header-2:not(.cm-formatting):before { content: ""; }
+
+.cm-line > span.cm-header-3:not(.cm-formatting):before { content: "### ";  color:#aaaaaa;}
+.cm-line.cm-active > span.cm-header-3 > span:not(.cm-selection):before { content: "### ";  color:#aaaaaa;}
+.cm-line > span.cm-header-3 ~ span.cm-header-3:not(.cm-formatting):before { content: ""; }
+
+.cm-line > span.cm-header-4:not(.cm-formatting):before { content: "#### ";  color:#aaaaaa;}
+.cm-line.cm-active > span.cm-header-4 > span:not(.cm-selection):before { content: "#### ";  color:#aaaaaa;}
+.cm-line > span.cm-header-4 ~ span.cm-header-4:not(.cm-formatting):before { content: ""; }
+
+.cm-line > span.cm-header-5:not(.cm-formatting):before { content: "##### ";  color:#aaaaaa;}
+.cm-line.cm-active > span.cm-header-5 > span:not(.cm-selection):before { content: "##### ";  color:#aaaaaa;}
+.cm-line > span.cm-header-5 ~ span.cm-header-5:not(.cm-formatting):before { content: ""; }
+
+.cm-line > span.cm-header-6:not(.cm-formatting):before { content: "###### ";  color:#aaaaaa;}
+.cm-line.cm-active > span.cm-header-6 > span:not(.cm-selection):before { content: "###### ";  color:#aaaaaa;}
+.cm-line > span.cm-header-6 ~ span.cm-header-6:not(.cm-formatting):before { content: ""; }

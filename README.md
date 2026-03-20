@@ -24,17 +24,18 @@ This guide is a work in progress and some sections may be out of date.
     - 🟢 [Developing new static objects](developing_new_static_objects.md)
     - 🟢 [Developing new environments](developing_new_environments.md)
     - 🟢 [Developing new playable scenes](developing_new_playable_scenes.md)
+    - 🔴 Developing games
 
 - 🔴 Adding active objects to an environment
     - 🔴 Pedestrians
     - 🔴 Cars
     - 🔴 Developing new active objects
 
-- 🔴 Interfacing with other devices
+- 🔴 Interfacing with external devices
     - 🔴 Haptics (motorized rollers)
     - 🔴 Incline and vibration (D-Box system)
     - 🔴 Motion capture (Optitrack)
     - 🔴 Instrumented wheelchair wheels (SmartWheel/NextWheel)
 
-
+- 🔴 Contributing to this manual
 - 🟡 [Contributors](Contributors.md)

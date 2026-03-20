@@ -5,7 +5,7 @@ A terrain is a scene that contains (only) the ground and walls. The following gu
 ## Designing the terrain in Blender
 
 Before creating a new terrain, we create these folders:
-- `wheelsims/art_source/irglm` that will contain the source Blender files for terrains related to the IRGLM;
+- `wheelsims/art_source/terrain/irglm` that will contain the source Blender files for terrains related to the IRGLM;
 - `wheelsims/src/terrain/irglm` that will contain the final terrain scenes used in Godot;
 - `wheelsims/src/terrain/irglm/fbx` that will contain the exported Blender files;
 - `wheelsims/src/terrain/irglm/textures` that will contain the jpg/png files used as textures.
@@ -17,7 +17,7 @@ Here is an example of the creation of the `irglm_4th_floor` terrain in Blender. 
 ![](images/developing_new_terrains_blender.png)
 
 
-Although the file is saved in the `art_source` folder as `wheelsims/art_source/irglm/irglm_4th_floor_terrain.blend`, the textures must be saved in the `src` folder so that they are imported by Godot. Here we have three textures:
+Although the file is saved in the `art_source` folder as `wheelsims/art_source/terrain/irglm/irglm_4th_floor_terrain.blend`, the textures must be saved in the `src` folder so that they are imported by Godot. Here we have three textures:
 - `wheelsims/src/terrain/irglm/textures/irglm_red_tile.jpg`
 - `wheelsims/src/terrain/irglm/textures/irglm_blue_tile.jpg`
 - `wheelsims/src/terrain/irglm/textures/irglm_standard_tile.jpg`

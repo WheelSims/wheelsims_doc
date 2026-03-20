@@ -1,0 +1,39 @@
+{
+  "outputFileName": "unlinked files output",
+  "disableWorkingLinks": false,
+  "directoriesToIgnore": [
+    ""
+  ],
+  "filesToIgnore": [
+    ""
+  ],
+  "fileTypesToIgnore": [
+    "bib",
+    "lua"
+  ],
+  "linksToIgnore": [],
+  "tagsToIgnore": [],
+  "fileTypesToDelete": [
+    "jpg",
+    "jpeg",
+    "png",
+    "tiff"
+  ],
+  "ignoreFileTypes": true,
+  "ignoreDirectories": true,
+  "unresolvedLinksIgnoreDirectories": true,
+  "unresolvedLinksOutputFileName": "unresolved links output",
+  "unresolvedLinksDirectoriesToIgnore": [],
+  "unresolvedLinksFilesToIgnore": [],
+  "unresolvedLinksFileTypesToIgnore": [],
+  "unresolvedLinksLinksToIgnore": [],
+  "unresolvedLinksTagsToIgnore": [],
+  "withoutTagsDirectoriesToIgnore": [],
+  "withoutTagsFilesToIgnore": [],
+  "withoutTagsOutputFileName": "files without tags",
+  "emptyFilesOutputFileName": "empty files",
+  "emptyFilesDirectories": [],
+  "emptyFilesFilesToIgnore": [],
+  "emptyFilesIgnoreDirectories": true,
+  "openOutputFile": true
+}

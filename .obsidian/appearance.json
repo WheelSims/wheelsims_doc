@@ -1,0 +1,14 @@
+{
+  "baseFontSize": 16,
+  "cssTheme": "",
+  "theme": "moonstone",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "felix"
+  ],
+  "baseFontSizeAction": false,
+  "textFontFamily": "",
+  "accentColor": "",
+  "showViewHeader": false,
+  "monospaceFontFamily": ""
+}
