@@ -31,6 +31,9 @@ This guide is a work in progress and some sections may be out of date.
     - 🔴 Cars
     - 🔴 Developing new active objects
 
+- 🔴 Adding elements to specific games
+    - 🔴 Obstacle race
+
 - 🔴 Interfacing with external devices
     - 🔴 Haptics (motorized rollers)
     - 🔴 Incline and vibration (D-Box system)
