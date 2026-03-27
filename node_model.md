@@ -1,6 +1,6 @@
 # Wheelsims Node Model
 
-Each node of this type:
+In the figure below, each node of this type:
 
 ```mermaid
 ---
@@ -19,22 +19,6 @@ node[[node]]
 
 corresponds to a scene saved as a separate `.tscn` file.
 
-- The [terrain](developing_new_terrains.md) node represents the surface on which the user propels (e.g., street, sidewalks, floor). Examples include:
-    - `terrain/park/park_terrain.tscn`
-    - `terrain/street_corner/street_corner_terrain.tscn`
-- The [environment](developing_new_environments.md) node combines a terrain with different [static objects](developing_new_static_objects.md) or animated objects (e.g., trees, cars, street lights). Examples include:
-    - `environments/park/park_environment.tscn`
-    - `environments/street_corner/street_corner_environment.tscn`
-- The [playable_scene](developing_new_playable_scenes.md) node combines an environment with the `player`. It can also integrate game elements. A `playable_scene` can therefore be ran by itself so that we can test the scene or game separately. Examples include:
-    - `playable_scenes/park.tscn`
-    - `playable_scenes/street_corner.tscn`
-    - `playable_scenes/obstacle_race.tscn`
-- The `control_gui` node is the user interface shown to the operator when we launch the application. It allows the operator to set configuration options and to load and launch a scene from the `playable_scenes` folder.
-- When running the main application, the playable_scene is rendered under a separate viewport, which means that we cannot see the result by default. Using the configuration options, we must load a projector/screen configuration, for instance `single_screen.tscn` which creates a window that connects to the subviewport.
-- Projection screens and overlays are considered as `devices`. Other devices can be loaded dynamically to communicate with external equipment or software. Examples of those devices include:
-    - `devices/d_box/d_box.tscn`
-    - `devices/optitrack/optitrack.tscn`
-    - `devices/motorized_rollers/motorized_rollers.tscn`
 
 ```mermaid
 ---
@@ -65,6 +49,23 @@ environment --> object_n[[object_n]]
 environment --> terrain[[terrain]]
 
 ```
+
+- The [terrain](developing_new_terrains.md) node represents the surface on which the user propels (e.g., street, sidewalks, floor). Examples include:
+    - `terrain/park/park_terrain.tscn`
+    - `terrain/street_corner/street_corner_terrain.tscn`
+- The [environment](developing_new_environments.md) node combines a terrain with different [static objects](developing_new_static_objects.md) or animated objects (e.g., trees, cars, street lights). Examples include:
+    - `environments/park/park_environment.tscn`
+    - `environments/street_corner/street_corner_environment.tscn`
+- The [playable_scene](developing_new_playable_scenes.md) node combines an environment with the `player`. It can also integrate game elements. A `playable_scene` can therefore be ran by itself so that we can test the scene or game separately. Examples include:
+    - `playable_scenes/park.tscn`
+    - `playable_scenes/street_corner.tscn`
+    - `playable_scenes/obstacle_race.tscn`
+- The `control_gui` node is the user interface shown to the operator when we launch the application. It allows the operator to set configuration options and to load and launch a scene from the `playable_scenes` folder.
+- When running the main application, the playable_scene is rendered under a separate viewport, which means that we cannot see the result by default. Using the configuration options, we must load a projector/screen configuration, for instance `single_screen.tscn` which creates a window that connects to the subviewport.
+- Projection screens and overlays are considered as `devices`. Other devices can be loaded dynamically to communicate with external equipment or software. Examples of those devices include:
+    - `devices/d_box/d_box.tscn`
+    - `devices/optitrack/optitrack.tscn`
+    - `devices/motorized_rollers/motorized_rollers.tscn`
 
 In addition to this node arborescence, any node has access to these global nodes:
 
