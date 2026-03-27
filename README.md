@@ -19,7 +19,7 @@ This guide is a work in progress and some sections may be out of date.
     - 🔴 File structure
 
 - 🔴 Developing new static scenes
-    - 🔴 The terrain/objects/environment/playable-scene model
+    - 🟢 [WheelSims node model](node_model.md)
     - 🟢 [Developing new terrains](developing_new_terrains.md)
     - 🟢 [Developing new static objects](developing_new_static_objects.md)
     - 🟢 [Developing new environments](developing_new_environments.md)
