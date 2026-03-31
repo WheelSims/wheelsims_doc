@@ -32,7 +32,7 @@ This guide is a work in progress and some sections may be out of date.
     - 🔴 Developing new active objects
 
 - 🔴 Adding elements to specific games
-    - 🔴 Obstacle race
+    - 🔴 [obstacle_race](obstacle_race.md)
 
 - 🔴 Interfacing with external devices
     - 🔴 Haptics (motorized rollers)
