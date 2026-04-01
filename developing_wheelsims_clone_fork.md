@@ -14,4 +14,4 @@ In the terminal, enter:
 sh dev/install_git_hooks
 ```
 
-This is it.
+This is all you need to do.
