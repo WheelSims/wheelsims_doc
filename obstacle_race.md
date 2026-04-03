@@ -36,7 +36,9 @@ In the same node (obstacle_race_generator), you need to fill the object fields t
 - ***Obstacle Infos***
 - ***Transparent Wall Infos***
 - ***Opaque Wall Infos***
+
 These are ressource objects called ObjectInfo. They are not the scenes of the objects directly. They contains differents fields:
+
 ![324](images/obstacle_race_object_info_inspector.png)
 
 
