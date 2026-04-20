@@ -9,24 +9,26 @@ The obstacle race is organized with different race levels. Every race level has 
 
 *Every length is in meters*
 
-A race is composed of challenges. A challenge is a line of different objects.
-A challenge is defined by the space between its objects and the size of the objects.
-Objects can be walls or obstacles. 
-That is why there are parameters for obstacles:
-- Size -> ***Obst Size Range***
-- Space between obstacles -> ***Opening Size Range***
+A race is composed of challenges. A challenge is a sequence of different objects. A challenge is defined by the spacing between its objects and the size of those objects. Objects can be either walls or obstacles. This is why there are separate parameters for obstacles and walls.
 
-And for walls:
-- Size -> ***Wall Size Range***
-- Space between walls -> ***Opening Size Range***
+**For obstacles:**
 
-The range corresponds of the minimum and the maximum of the lengths.
+- Size → **Obstacle Size Range**
+- Space between obstacles → **Opening Size Range**
 
-You can choose the proportion of walls or obstacles with the parameter ***Obstacle Opening Prob*** (1 for obstacle and 0 for opening).
+**For walls:**
 
-Walls can be transparent or opaque (ex: brickwall or fence). You can choose the proportion with the parameter ***Transparent Op Wall Prob*** (1 for transparency and 0 for opacity).
+- Size → **Wall Size Range**
+- Space between walls → **Opening Size Range**
 
-These parameters can be edited in the inspector of the node obstacle_race_generator. 
+The range corresponds to the minimum and maximum lengths.
+
+You can control the proportion of walls and obstacles using the **Obstacle Opening Probability** parameter (1 for obstacle, 0 for opening).
+
+Walls can be transparent or opaque (e.g., a brick wall or a fence). You can control this proportion using the **Transparent/Opaque Wall Probability** parameter (1 for transparent, 0 for opaque).
+
+These parameters can be edited in the inspector of the **obstacle_race_generator** node.
+
 ###  Objects
 
 In the same node (obstacle_race_generator), you need to fill the object fields to generate the objects. They are 3 lists:
@@ -36,35 +38,50 @@ In the same node (obstacle_race_generator), you need to fill the object fields t
 - ***Obstacle Infos***
 - ***Transparent Wall Infos***
 - ***Opaque Wall Infos***
-These are ressource objects called ObjectInfo. They are not the scenes of the objects directly. They contains differents fields:
+
+These are resource objects called ObjectInfo. They are not the scenes of the objects directly. They contain different fields:
+
 ![324](images/obstacle_race_object_info_inspector.png)
 
 
-- ***Scene***: References the scene, needed to instantiate the object.
-- ***Sizes***: It's a dictionary of the sizes in the axis in function of the rotation of the object.
-- ***Local Scale***: The size with the default rotation in the scene. 
+- _**Scene**_: References the scene required to instantiate the object.
+- _**Sizes**_: A dictionary containing the object sizes along each axis, depending on the object’s rotation.
+- _**Local Scale**_: The object size using the default rotation defined in the scene.
 
-The sizes is needed to calculate sizes without instantiate every object.
-- the depth of the challenge (= the greatest value in x between the obstacles of the challenge)
-- the object size (= the z value)
+The sizes are needed to calculate dimensions without instantiating every object:
 
-To get these object infos, we need to bake them before running the main scene.
+- the depth of the challenge (i.e., the greatest X value among the obstacles in the challenge)
+- the object size (i.e., the Z value)
 
-##  How to bake objects
-A tool script named object_size_baker.gd is used to create the ObjectInfo objects with the scenes.
-#### First step
-Every scene that you want to bake must be located in one and same folder.
-Then, the folder path must be referenced in the baked_config_res.tres. 
-This ressource is located in games/races/obstacle_race/generator/baker.
-Finally, create a destination folder for the ObjectInfo objects and reference its path in baked_config_res.tres.
+To obtain this object information, the data must be baked before running the main scene.
 
-#### Second step
-You can run the baker script: object_size_baker.gd located in games/races/obstacle_race/generator/baker.
-How to run it: 
-Open it and Ctrl+maj+x or right-clic + execute.
+---
+## How to bake objects
 
-If it works, you have message in the console of the ObjectInfo files created with there paths. 
+A tool script named **object_size_baker.gd** is used to create the **ObjectInfo** resources from the scenes.
 
-#### Third Step
+### First step
 
-The ObjectInfo objects are created. You now need to pass them in the inspector of the obstacle_race_generator node.
+All scenes you want to bake must be located in the same folder.
+
+Then, reference this folder path in **baked_config_res.tres**.  
+This resource is located in:
+
+`games/races/obstacle_race/generator/baker`
+
+Next, create a destination folder for the **ObjectInfo** resources and reference its path in **baked_config_res.tres**.
+
+### Second step
+
+Run the baker script **object_size_baker.gd**, located in:
+
+`games/races/obstacle_race/generator/baker`
+
+**How to run it:**  
+Open the script and press **Ctrl + Shift + X**, or right-click the file and select **Execute**.
+
+If the process succeeds, a message will appear in the console listing the created **ObjectInfo** files and their paths.
+
+### Third step
+
+The **ObjectInfo** resources are now created. You must assign them in the inspector of the **obstacle_race_generator** node.
