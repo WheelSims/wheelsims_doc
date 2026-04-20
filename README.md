@@ -14,7 +14,7 @@ This guide is a work in progress and some sections may be out of date.
     - 🔴 Cloning the main `wheelsims` repository
     - 🔴 Starting the user interface
 - 🔴 Developing WheelSims
-    - [🔴 Cloning vs forking the `wheelsims` repository](developing_wheelsims_clone_fork.md)
+    - [🟢 Cloning the main `wheelsims` repository](developing_wheelsims_clone_fork.md)
     - 🟢 [File and code conventions](conventions.md)
     - 🔴 File structure
 
